@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #4E5150;
+}
+
+header {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  place-items: center;
+}
+
+header .profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 36px;
+}
+
+header .user-name {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+header .location {
+  color: #A9A9A9;
+  font-size: 10px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile .box {
+  width: 65px;
+  background: #E5E5E5;
+  margin: 10px 8px;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.grid-container {
+  margin: 2rem 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)(3);
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: .5rem 1rem;
+}
+
+.grid-container .horizontal {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+}
+
+.grid-container .horizontal-2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.grid-container .vertical {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/ span 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.grid-container img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 900px) {
+  header .user-name {
+    font-size: 25px;
+  }
+  header .location {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .profile .box {
+    margin: 10px 15px;
+  }
+  .grid-container {
+    margin: 2rem 15rem;
+    grid-gap: .9rem 1.4rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
